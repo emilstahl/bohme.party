@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>bohme.party</title>
+  <meta name="description" content="tbohme.party">
+  <script>
+    window.onload = choosePic;
+
+    var myPix = new Array("/1.gif","/2.gif");
+
+    function choosePic() {
+     randomNum = Math.floor((Math.random() * myPix.length));
+     document.getElementById("myPicture").src = myPix[randomNum];
+   }
+ </script>
+</head>
+<body>
+  <img src="/1.gif" alt="bohme.party" id="noah" /> 
+</body>
+</html>
