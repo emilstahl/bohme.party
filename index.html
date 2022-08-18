@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <head>
-  <title>bohme.party</title>
-  <meta name="description" content="tbohme.party">
-  <style>
-img{
-    height: 100%;
-    text-align: center;
-    }
-  </style>
-  <script>
-    window.onload = choosePic;
-
-    var myPix = new Array("/1.gif","/2.gif");
-
-    function choosePic() {
-     randomNum = Math.floor((Math.random() * myPix.length));
-     document.getElementById("noah").src = myPix[randomNum];
-   }
- </script>
+   <title>bohme.party</title>
+   <meta name="description" content="tbohme.party">
+   <style>
+       body{
+           margin: 0px;
+           padding: 0px;
+           overflow: hidden;
+      }
+       div{
+           margin: auto;
+      }
+       img {
+           max-height: 100%;
+           height: auto;
+           position: fixed;
+           left:0;
+           right:0;
+           margin:0 auto;
+      }
+   </style>
+   <script>
+      window.onload = choosePic;
+      
+      var myPix = new Array("/1.gif","/2.gif");
+      
+      function choosePic() {
+       randomNum = Math.floor((Math.random() * myPix.length));
+       document.getElementById("noah").src = myPix[randomNum];
+      }
+   </script>
 </head>
 <body>
-  <img src="/1.gif" alt="bohme.party" id="noah" /> 
+   <div>
+      <img src="/1.gif" alt="bohme.party" id="noah">
+   </div>
 </body>
 </html>
