@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <head>
    <title>bohme.party</title>
-   <meta name="description" content="tbohme.party">
+   <meta name="description" content="bohme.party">
+   <meta name="twitter:image:src" content="https://bohme.party/1.gif" />
+   <meta property="og:image" content="https://bohme.party/1.gif" />
    <style>
        body{
            margin: 0px;
            padding: 0px;
            overflow: hidden;
+           background-color: rgb(0 0 0);
       }
        div{
            margin: auto;
@@ -22,14 +25,13 @@
    </style>
    <script>
       window.onload = choosePic;
-      
       var myPix = new Array("/1.gif","/2.gif");
-      
       function choosePic() {
        randomNum = Math.floor((Math.random() * myPix.length));
        document.getElementById("noah").src = myPix[randomNum];
       }
    </script>
+
 </head>
 <body>
    <div>
