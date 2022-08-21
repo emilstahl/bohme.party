@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <head>
    <title>bohme.party</title>
+   
+   <meta http-equiv='cache-control' content='no-cache'>
+   <meta http-equiv='expires' content='0'>
+   <meta http-equiv='pragma' content='no-cache'>
    <meta name="description" content="bohme.party">
+   
    <meta name="twitter:image:src" content="https://bohme.party/1.gif" />
    <meta property="og:image" content="https://bohme.party/1.gif" />
    <style>
@@ -25,7 +30,7 @@
    </style>
    <script>
       window.onload = choosePic;
-      var myPix = new Array("/1.gif","/2.gif");
+      var myPix = new Array("https://cdn.discordapp.com/attachments/813468889862111235/1011030171811336303/1-opti.gif","https://cdn.discordapp.com/attachments/813468889862111235/1011030971149209800/2-opti.gif");
       function choosePic() {
        randomNum = Math.floor((Math.random() * myPix.length));
        document.getElementById("noah").src = myPix[randomNum];
@@ -35,7 +40,7 @@
 </head>
 <body>
    <div>
-      <img src="/1.gif" alt="bohme.party" id="noah">
+      <img loading="lazy" src="" alt="bohme.party" id="noah">
    </div>
 </body>
 </html>
